@@ -96,7 +96,8 @@ height: 100%;
 export const FirstCol = styled.p`
 display: grid;
 margin-top: 100px;
-max-width: 70%;
+max-width: 80%;
+max-height: 70%;
 grid-template-rows: 1fr 1fr;
 margin-left: auto;
 margin-right: auto;
@@ -147,7 +148,8 @@ height: 40px;
 export const SecCol = styled.p`
 display: grid;
 margin-top: 100px;
-max-width: 70%;
+max-width: 80%;
+max-height: 70%;
 grid-template-rows: 1fr 1fr;
 margin-left: auto;
 margin-right: auto;
@@ -170,7 +172,8 @@ cursor: pointer;
 export const ThirdCol = styled.p`
 display: grid;
 margin-top: 100px;
-max-width: 70%;
+max-width: 80%;
+max-height: 70%;
 grid-template-rows: 1fr 1fr;
 margin-left: auto;
 margin-right: auto;

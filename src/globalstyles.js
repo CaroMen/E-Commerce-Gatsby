@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 // import Playfair from './fonts/PlayfairDisplay-Medium.ttf'
 
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 
 * {
     box-sizing: border-box;
@@ -54,6 +54,3 @@ cursor: pointer;
     width: 100%;
 }
 `
-
-
-export default GlobalStyle

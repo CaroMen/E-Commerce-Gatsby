@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -10,12 +12,28 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `components`,
+        path: `${__dirname}/src/components`,
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-shopify2`,
+      options: {
+        shopName: `modernbyfrancis`,
+        accessToken: process.env.SHOPIFY_STOREFRONT_API_TOKEN,
+        apiVersion: `2020-01`,
+        includeCollections: [`shop`],
+      }
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {

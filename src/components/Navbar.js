@@ -22,7 +22,7 @@ export const Navbar = () => {
                             </NavLinks>
                             </NavItem>
                             <NavItem>
-                                <NavLinks to="/">
+                                <NavLinks to="/store">
                                     Store
                             </NavLinks>
                             </NavItem>
@@ -37,4 +37,4 @@ export const Navbar = () => {
             </IconContext.Provider>
         </>
     )
-}
+};
