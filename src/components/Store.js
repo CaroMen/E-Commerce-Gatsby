@@ -1,6 +1,8 @@
+// @jsx jsx
+import { jsx } from 'theme-ui'
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import Image from 'gatsby-image';
+import { ProductCard } from '../components/Product-card';
 
 export const Store = () => {
     return (
@@ -12,47 +14,41 @@ export const Store = () => {
                         description
                         productType
                         variants {
-                            price
                             image {
                                 localFile {
                                     childImageSharp {
-                                        fixed(height: 200, width: 100, cropFocus: ATTENTION, fit: COVER) {
-                                            ...GatsbyImageSharpFixed_withWebp
+                                        fluid(maxHeight: 1600, maxWidth: 900, cropFocus: CENTER, fit: COVER) {
+                                            ...GatsbyImageSharpFluid_withWebp
                                         }
                                     }
                                 }
                             }
-                        }
-
+                            price
                         }
                     }
                 }
-            `}
+            }
+        `}
 
             render={data => (
                 <>
-                    {data.allShopifyProduct.nodes.map(product => (
-                        <div>
-                            <Product key={product.id} product={product} />
+                    <div sx={{
+                        mx: 'auto', maxWidth: '80vw', display: 'grid', padding: '40px',
+                        gridGap: 4,
+                        gridTemplateColumns: [
+                            'auto',
+                            '1fr 1fr 1fr 1fr'
+                        ], background: 'white'
+                    }}>
+                        {data.allShopifyProduct.nodes.map(product => (
+                            <div>
+                                <ProductCard key={product.id} product={product} />
 
-                        </div>
-                    ))}
-                    <pre>
-                        {JSON.stringify(data, null, 2)}
-                    </pre>
+                            </div>
+                        ))}
+                    </div>
                 </>
             )}
         />
     )
 };
-
-export const Product = ({ product }) => {
-    return (
-        <div>
-            <h2>{product.title}</h2>
-            <p>{product.productType}</p>
-            <p>{product.description}</p>
-            <Image fixed={product.variants[0].image.localFile.childImageSharp.fixed} alt={product.title} />
-        </div>
-    )
-}

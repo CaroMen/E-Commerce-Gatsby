@@ -22,7 +22,7 @@ export const StoreSection = ({ intro, darkText, cat1, start, img2, alt, cat2, ca
                             </ImgWrapperStore>
                             <StoreTextWrapperDesc>
                                 <ImgBack src={blob} />
-                                <IntroHeadLine darkText={darkText}>LUXURY</IntroHeadLine>
+                                <IntroHeadLine darkText={darkText}>MODERN BY FRANCIS</IntroHeadLine>
                                 <IntroDesc darkText={darkText}>Inspired by contemporary architecture, our furniture is a modern take on interior design. Our designs are a blend of comfortable, liveable elements that give your home a sophisticated look to any room.</IntroDesc>
                                 <IntroDesc darkText={darkText}>Our job is to help you make your vision become a reality. Give your home a sleek and fresh look with our furniture. With a comfortable yet bold and simple take on life, find the joy that is found in a beautifully decorated, contemporary and modern home.</IntroDesc>
                             </StoreTextWrapperDesc>

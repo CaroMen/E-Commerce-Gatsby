@@ -9,11 +9,12 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0px;
     padding: 0px;
     // overflow-x: hidden;
-    // background-color: #D0CCD0;
+    // background: white;
 }
 
-html, body {
+body {
     overflow-x: hidden;
+    background-color: white;
 }
 `;
 

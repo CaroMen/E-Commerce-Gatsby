@@ -10,7 +10,7 @@ export const Navbar = () => {
                 <Nav>
                     <NavbarContainer>
                         <NavLogo to="/">
-                            LUXURY
+                            MODERN BY FRANCIS
                         </NavLogo>
                         <MobileIcon>
 
