@@ -19,11 +19,14 @@ export const Store = () => {
                                     childImageSharp {
                                         fluid(maxHeight: 1600, maxWidth: 900, cropFocus: CENTER, fit: COVER) {
                                             ...GatsbyImageSharpFluid_withWebp
+                                            # srcSet
                                         }
                                     }
                                 }
                             }
                             price
+                            id
+                            shopifyId
                         }
                     }
                 }

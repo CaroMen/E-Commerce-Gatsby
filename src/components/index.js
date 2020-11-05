@@ -5,4 +5,4 @@ export * from './StoreSection';
 export * from './Options';
 export { Store, query } from './Store';
 export * from './Product-card';
-// export * from './Cart';
+export * from './Cart';
