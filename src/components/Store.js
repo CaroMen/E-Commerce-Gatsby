@@ -2,7 +2,7 @@
 import { jsx } from 'theme-ui'
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { ProductCard } from '../components/Product-card';
+import { ProductCard, BuyButton } from '../components/Product-card';
 
 export const Store = () => {
     return (
@@ -28,6 +28,7 @@ export const Store = () => {
                             id
                             shopifyId
                         }
+                        shopifyId
                     }
                 }
             }

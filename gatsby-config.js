@@ -7,7 +7,7 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    // `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-theme-ui`,
     {
@@ -30,7 +30,7 @@ module.exports = {
       resolve: `gatsby-source-shopify2`,
       options: {
         shopName: `modernbyfrancis`,
-        accessToken: process.env.SHOPIFY_STOREFRONT_API_TOKEN,
+        accessToken: 'e7fd1b5eef627c5aeac4ee7be2bc6801',
         apiVersion: `2020-01`,
         includeCollections: [`shop`],
       }
