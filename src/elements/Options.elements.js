@@ -10,17 +10,17 @@ background-color: white ;
 
 export const Pictures = styled.div`
 display: grid;
-grid-template-columns: 1.2fr 1.1fr 1.2fr;
+grid-template-columns: .95fr 1.3fr 1.2fr;
 `
 export const PicturesTwo = styled.div`
 display: grid;
-grid-template-columns: .9fr 1.1fr 1.2fr;
+grid-template-columns: .9fr 1.1fr .9fr;
 `
 
 
 export const ImgOne = styled.img`
 width: 100%;
-height: 100%;
+height: 300px;
 `
 
 export const ImgTwo = styled.img`
@@ -42,5 +42,5 @@ height: 300px;
 
 export const ImgSix = styled.img`
 width: 100%;
-height: 300px;
+height: 100%;
 `

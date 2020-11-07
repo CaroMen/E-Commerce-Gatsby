@@ -37,12 +37,12 @@ export const Store = () => {
             render={data => (
                 <>
                     <div sx={{
-                        mx: 'auto', maxWidth: '80vw', display: 'grid', padding: '40px',
+                        maxWidth: 'auto', display: 'grid', padding: '60px',
                         gridGap: 4,
                         gridTemplateColumns: [
                             'auto',
                             '1fr 1fr 1fr 1fr'
-                        ], background: 'white'
+                        ], backgroundColor: 'white',
                     }}>
                         {data.allShopifyProduct.nodes.map(product => (
                             <div>

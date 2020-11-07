@@ -38,15 +38,15 @@ export const StoreSection = ({ intro, darkText, cat1, start, img2, alt, cat2, ca
                             <SecCol>
                                 <ModernIcon />
                                 <DescCol>
-                                    <DescTitle darkText={darkText}>Great Prices</DescTitle>
-                                    <Desc darkText={darkText}>We offer some of the best prices you will find during your search for new furniture. We help you stay within your budget and offer a wide variety of options that will fall in your range.</Desc>
+                                    <DescTitle darkText={darkText}>Modern Furniture</DescTitle>
+                                    <Desc darkText={darkText}>We offer unique, modern, and contemporary furniture. We look to the future for our designs and create furniture that won't stand all the way out in your home, but will be modern and unique.</Desc>
                                 </DescCol>
                             </SecCol>
                             <ThirdCol>
                                 <ServiceIcon />
                                 <DescCol>
-                                    <DescTitle darkText={darkText}>Great Prices</DescTitle>
-                                    <Desc darkText={darkText}>We offer some of the best prices you will find during your search for new furniture. We help you stay within your budget and offer a wide variety of options that will fall in your range.</Desc>
+                                    <DescTitle darkText={darkText}>Customer Service</DescTitle>
+                                    <Desc darkText={darkText}>During your entire shopping experience, we offer great customer service to make a special time in your life a lot easier. Our employees can answer all of your questions and accomodate any need you may have.</Desc>
                                 </DescCol>
                             </ThirdCol>
                         </ColumnDesc>

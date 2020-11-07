@@ -17,18 +17,8 @@ export const Navbar = () => {
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to="/">
-                                    About
-                            </NavLinks>
-                            </NavItem>
-                            <NavItem>
                                 <NavLinks to="/store">
                                     Store
-                            </NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks to="">
-                                    Cart
                             </NavLinks>
                             </NavItem>
                         </NavMenu>
