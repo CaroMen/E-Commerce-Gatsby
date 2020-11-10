@@ -3,7 +3,7 @@ import headerImg from '../images/header.png';
 import { Container } from '../globalstyles';
 import { Header, FirstRow, TextWrapper, Heading, Subtitle, ImgWrapper, Img, HeaderColumn, HeaderColumnType, HeaderColumnIntro, GoIcon, StoreLink } from '../elements/Hero.elements';
 
-export const Hero = ({ darkText, headline1, headline2, subtitleHeader, img, alt, start, plant1, plantSubtitle }) => {
+export const Hero = ({ darkText, start, }) => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 

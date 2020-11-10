@@ -2,13 +2,13 @@
 import { jsx } from 'theme-ui'
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { ProductCard, BuyButton } from '../components/Product-card';
+import { ProductCard } from '../components/Product-card';
 
 export const Store = () => {
     return (
         <StaticQuery
             query={graphql`
-                { allShopifyProduct {
+                  { allShopifyProduct {
                     nodes {
                         title
                         description
